@@ -1,4 +1,4 @@
-# JetPaclk-Compose-Spotify-UI
+# JetPack-Compose-Spotify-UI
 
 Just learning compose while building the Spotify ui.
 

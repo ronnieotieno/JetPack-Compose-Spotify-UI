@@ -1,8 +1,6 @@
 package dev.ronnie.github.sportifyui
 
 import android.os.Bundle
-import android.view.View
-import android.view.Window
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.runtime.Composable
@@ -11,13 +9,7 @@ import dev.ronnie.github.sportifyui.ui.theme.SportifyUITheme
 import androidx.compose.material.*
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
-import android.view.WindowManager
-import androidx.compose.foundation.layout.fillMaxHeight
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
+import androidx.compose.ui.tooling.preview.Preview
 
 
 class MainActivity : ComponentActivity() {
@@ -29,7 +21,7 @@ class MainActivity : ComponentActivity() {
                 Scaffold(
                     bottomBar = { BottomNavigationBar() }
                 ) {
-                    HomeScreen()
+                    Home()
                 }
             }
 
@@ -37,6 +29,13 @@ class MainActivity : ComponentActivity() {
     }
 
     @Composable
+    @Preview
+    fun Home(){
+        HomeScreen()
+    }
+
+    @Composable
+    @Preview
     fun BottomNavigationBar() {
         val items = listOf(
             NavigationItem.Home,
