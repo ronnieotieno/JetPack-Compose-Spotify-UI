@@ -1,4 +1,4 @@
-package dev.ronnie.github.sportifyui.ui.theme
+package com.flexcode.github.sportifyui.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

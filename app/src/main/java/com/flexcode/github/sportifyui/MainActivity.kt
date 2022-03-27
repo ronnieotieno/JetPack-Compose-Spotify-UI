@@ -1,11 +1,11 @@
-package dev.ronnie.github.sportifyui
+package com.flexcode.github.sportifyui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.runtime.Composable
-import dev.ronnie.github.sportifyui.ui.HomeScreen
-import dev.ronnie.github.sportifyui.ui.theme.SportifyUITheme
+import com.flexcode.github.sportifyui.ui.HomeScreen
+import com.flexcode.github.sportifyui.ui.theme.SportifyUITheme
 import androidx.compose.material.*
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
@@ -41,6 +41,7 @@ class MainActivity : ComponentActivity() {
             NavigationItem.Home,
             NavigationItem.Search,
             NavigationItem.Library,
+            NavigationItem.Premium,
         )
 
         BottomNavigation(

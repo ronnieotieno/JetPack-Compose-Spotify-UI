@@ -1,4 +1,4 @@
-package dev.ronnie.github.sportifyui
+package com.flexcode.github.sportifyui
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

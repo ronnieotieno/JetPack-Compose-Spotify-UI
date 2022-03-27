@@ -1,4 +1,4 @@
-package dev.ronnie.github.sportifyui
+package com.flexcode.github.sportifyui
 
 import org.junit.Test
 

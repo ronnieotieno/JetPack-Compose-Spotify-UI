@@ -1,4 +1,4 @@
-package dev.ronnie.github.sportifyui.ui
+package com.flexcode.github.sportifyui.ui
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.*
@@ -18,12 +18,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import dev.ronnie.github.sportifyui.PlayList
-import dev.ronnie.github.sportifyui.R
-import dev.ronnie.github.sportifyui.RoundAndBoxPlayList
-import dev.ronnie.github.sportifyui.ui.theme.backgroundColor
-import dev.ronnie.github.sportifyui.ui.theme.tileBackground
-import dev.ronnie.github.sportifyui.ui.theme.white
+import com.flexcode.github.sportifyui.PlayList
+import com.flexcode.github.sportifyui.R
+import com.flexcode.github.sportifyui.RoundAndBoxPlayList
+import com.flexcode.github.sportifyui.ui.theme.backgroundColor
+import com.flexcode.github.sportifyui.ui.theme.tileBackground
+import com.flexcode.github.sportifyui.ui.theme.white
 
 @Composable
 @Preview
@@ -60,7 +60,7 @@ fun HomeScreen() {
                 R.drawable.daily_mix_2
             )
             ListsSection(
-                title = "Made for Ronnie",
+                title = "Made for Felix",
                 list = listOf(
                     PlayList(R.drawable.dua_lipa, "Business wars", "Show Wondery"),
                     PlayList(R.drawable.nikita, "Business wars", "Show Wondery"),
@@ -128,8 +128,15 @@ fun Greetings() {
             modifier = Modifier.wrapContentWidth()
         ) {
             Icon(
+                painter = painterResource(id = R.drawable.ic_notifications),
+                contentDescription = "Notifications", tint = white, modifier = Modifier
+                    .size(26.dp)
+            )
+            Icon(
                 painter = painterResource(id = R.drawable.ic_history),
-                contentDescription = "History", tint = white, modifier = Modifier.size(26.dp)
+                contentDescription = "History", tint = white, modifier = Modifier
+                    .padding(start = 15.dp)
+                    .size(26.dp)
             )
             Icon(
                 painter = painterResource(id = R.drawable.ic_settings),
@@ -363,6 +370,14 @@ fun CurrentlyPlaying(modifier: Modifier) {
                 .align(Alignment.CenterEnd)
                 .padding(end = 15.dp)
         ) {
+            Image(
+                painter = painterResource(R.drawable.ic_devices),
+                contentDescription = "current_play_device",
+                modifier = Modifier
+                    .padding(end = 10.dp)
+                    .size(25.dp)
+                    .fillMaxHeight()
+            )
             Image(
                 painter = painterResource(R.drawable.ic_like),
                 contentDescription = "current_play",
