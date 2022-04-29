@@ -3,13 +3,13 @@ package dev.ronnie.github.sportifyui
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.runtime.Composable
-import dev.ronnie.github.sportifyui.ui.HomeScreen
-import dev.ronnie.github.sportifyui.ui.theme.SportifyUITheme
 import androidx.compose.material.*
+import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
+import dev.ronnie.github.sportifyui.ui.HomeScreen
+import dev.ronnie.github.sportifyui.ui.theme.SportifyUITheme
 
 
 class MainActivity : ComponentActivity() {
@@ -30,7 +30,7 @@ class MainActivity : ComponentActivity() {
 
     @Composable
     @Preview
-    fun Home(){
+    fun Home() {
         HomeScreen()
     }
 
